@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academic Pathways | CareerGuide for Teens</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="theme.js" defer></script>
+  </head>
+  <body>
+    <!-- Shared header: current page is highlighted with the active class. -->
+    <header class="topbar">
+      <a class="brand" href="homepage.html" aria-label="CareerGuide for Teens home">
+        <span>CareerGuide</span>
+        <small>for Teens</small>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="homepage.html">Home</a>
+        <a href="explore-careers.html">Explore Careers</a>
+        <a class="active" href="academic-pathways.html">Academic Pathways</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false">Dark</button>
+    </header>
+
+    <main>
+      <!-- Academic Pathways page: lets users compare routes after SPM or STPM. -->
+      <section class="pathways-page" aria-labelledby="pathways-title">
+        <div class="pathways-heading">
+          <h1 id="pathways-title">Academic Pathways</h1>
+          <p>Choose your current level to see available pathways.</p>
+        </div>
+
+        <div class="pathway-tabs" role="tablist" aria-label="Academic pathway level">
+          <button class="pathway-tab active" type="button" data-pathway-tab="spm">After SPM</button>
+          <button class="pathway-tab" type="button" data-pathway-tab="stpm">After STPM</button>
+        </div>
+
+        <!-- Pathway lists are rendered from academic-pathways.js so both tabs stay easy to update. -->
+        <section class="academic-map active" data-pathway-panel="spm" aria-label="20 pathways after SPM">
+          <h2>20 Pathways After SPM</h2>
+          <div class="academic-pathway-list" data-pathway-list="spm"></div>
+        </section>
+
+        <section class="academic-map" data-pathway-panel="stpm" aria-label="20 pathways after STPM">
+          <h2>20 Pathways After STPM</h2>
+          <div class="academic-pathway-list" data-pathway-list="stpm"></div>
+        </section>
+
+        <p class="pathway-note">Click on any pathway to learn more about courses, duration, and career opportunities.</p>
+      </section>
+    </main>
+
+    <script src="academic-pathways.js"></script>
+  </body>
+</html>
+
+

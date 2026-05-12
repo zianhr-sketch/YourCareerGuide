@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Career Quiz | CareerGuide for Teens</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="theme.js" defer></script>
+  </head>
+  <body>
+    <!-- Shared header: Quiz is highlighted as the active page. -->
+    <header class="topbar">
+      <a class="brand" href="homepage.html" aria-label="CareerGuide for Teens home">
+        <span>CareerGuide</span>
+        <small>for Teens</small>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="homepage.html">Home</a>
+        <a href="explore-careers.html">Explore Careers</a>
+        <a href="academic-pathways.html">Academic Pathways</a>
+        <a class="active" href="quiz.html">Quiz</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false">Dark</button>
+    </header>
+
+    <main>
+      <!-- Quiz intro screen: shown first before the question flow begins. -->
+      <section class="quiz-page-frame quiz-intro-frame" id="quiz-intro-screen" aria-labelledby="quiz-intro-title">
+        <h1 id="quiz-intro-title">Career Quiz</h1>
+        <p>Answer all questions honestly. There are no right or wrong answers.</p>
+        <button class="primary-action" id="start-quiz" type="button">Start</button>
+      </section>
+
+      <!-- Quiz screen: JavaScript fills the question and answer choices. -->
+      <section class="quiz-page-frame hidden" id="quiz-screen" aria-labelledby="quiz-title">
+        <div class="quiz-page-header">
+          <div class="quiz-progress-wrap" aria-label="Quiz progress">
+            <span id="question-counter">Question 1 of 10</span>
+            <div class="quiz-progress"><span id="progress-bar"></span></div>
+          </div>
+        </div>
+
+        <div class="quiz-question-layout">
+          <button class="outline-action quiz-side-action quiz-back-side" id="back-question" type="button">Back</button>
+
+          <form class="question-card" id="guided-quiz">
+            <fieldset>
+              <legend id="question-text">I enjoy activities that involve:</legend>
+              <div class="answer-list" id="answer-list"></div>
+            </fieldset>
+          </form>
+
+          <button class="primary-action quiz-side-action quiz-next-side" id="next-question" type="button">Next</button>
+        </div>
+      </section>
+
+      <!-- Video screen: shown after the last answer, then the result appears when the video ends. -->
+      <section class="quiz-page-frame quiz-video-frame hidden" id="quiz-video-screen" aria-labelledby="quiz-video-title">
+        <div>
+          <h1 id="quiz-video-title">Preparing Your Results</h1>
+          <p>The future belongs to those who explore their potential. Your results are on the way.</p>
+        </div>
+        <video id="quiz-transition-video" src="assets/quiz-transition.mp4" playsinline preload="auto" disablepictureinpicture controlslist="nodownload noplaybackrate nofullscreen"></video>
+        <button class="primary-action hidden" id="show-result-after-video" type="button">Show Result</button>
+      </section>
+
+      <!-- Result screen: hidden first, then displayed after the quiz video. -->
+      <section class="quiz-page-frame result-page-frame hidden" id="result-screen" aria-labelledby="result-title">
+        <div class="result-heading">
+          <span class="celebration" aria-hidden="true">&#127881;</span>
+          <div>
+            <h1 id="result-title">Your Results</h1>
+            <p>Based on your answers, the career that matches you the most is:</p>
+          </div>
+        </div>
+
+        <article class="result-card">
+          <div class="result-trophy" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <path d="M35 24h50v21c0 23-11 38-25 38S35 68 35 45z" fill="#ffb52e" stroke="#9b5c00" stroke-width="5"></path>
+              <path d="M35 33H16c0 22 10 33 26 33M85 33h19c0 22-10 33-26 33" fill="none" stroke="#ffb52e" stroke-width="9" stroke-linecap="round"></path>
+              <path d="M60 82v16M39 101h42" stroke="#9b5c00" stroke-width="8" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <div>
+            <h2 id="matched-career">Graphic Designer</h2>
+            <span id="matched-category">Creative &amp; Media</span>
+            <strong id="match-percent">85% Match</strong>
+          </div>
+        </article>
+
+        <div class="result-details-grid">
+          <section>
+            <h2>Why this career suits you:</h2>
+            <ul class="result-list" id="suit-list"></ul>
+          </section>
+          <section>
+            <h2>Suggested Pathways:</h2>
+            <ul class="result-list" id="pathway-list"></ul>
+          </section>
+        </div>
+
+        <div class="result-actions">
+          <a class="primary-action" id="explore-result-link" href="explore-careers.html">Explore This Career</a>
+          <button class="outline-action" id="retake-quiz" type="button">Retake Quiz</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="quiz-page.js"></script>
+  </body>
+</html>
+
+

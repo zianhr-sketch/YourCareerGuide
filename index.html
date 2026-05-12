@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CareerGuide</title>
+    <script>
+      // Prevent the browser from restoring a slightly scrolled homepage position on refresh.
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      if (window.location.hash === "#home") {
+        history.replaceState(null, "", window.location.pathname + window.location.search);
+      }
+
+      window.scrollTo(0, 0);
+    </script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="theme.js" defer></script>
+  </head>
+  <body>
+    <!-- Shared header: logo and navigation links to each website page. -->
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="CareerGuide for Teens home">
+        <span>CareerGuide</span>
+        <small>for Teens</small>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="explore-careers.html">Explore Careers</a>
+        <a href="academic-pathways.html">Academic Pathways</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false">Dark</button>
+    </header>
+
+    <main id="home">
+      <!-- Homepage hero: introduces the website and gives users the two main actions. -->
+      <section class="hero-shell" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <h1 id="page-title">Discover Your Future Career with CareerGuide</h1>
+          <p>An interactive career guidance platform designed to help teenagers explore careers, discover their interests and plan their future pathway with confidence.</p>
+          <div class="hero-actions">
+            <a class="primary-action" href="quiz.html">Start Career Quiz</a>
+            <a class="secondary-action" href="explore-careers.html">Explore Careers</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Students exploring future career ideas">
+          <img src="career-buddy-hero-trimmed.png" alt="Teenagers using laptops with career icons around them">
+        </div>
+      </section>
+
+      <!-- Welcome section: explains the purpose of CareerGuide. -->
+      <section class="buddy-section welcome-section" aria-labelledby="welcome-title">
+        <div class="section-copy">
+          <h2 id="welcome-title">Welcome to CareerGuide</h2>
+          <p>Choosing a career can be confusing, especially for teenagers who are still discovering their interests and strengths. CareerGuide helps students explore different career opportunities[...]
+          <p>Our platform is designed to make career exploration fun, simple and engaging for secondary school students.</p>
+        </div>
+      </section>
+
+      <!-- Features section: highlights the main tools and resources on the website. -->
+      <section class="buddy-section" aria-labelledby="features-title">
+        <div class="section-heading-simple">
+          <h2 id="features-title">What CareerGuide Offers</h2>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">&#127919;</span>
+            <h3>Interactive Career Quiz</h3>
+            <p>Discover careers that match your personality, interests, and skills through fun interactive quizzes.</p>
+          </article>
+
+          <article class="feature-card feature-card-wide">
+            <span class="feature-icon" aria-hidden="true">&#128218;</span>
+            <h3>Career Categories</h3>
+            <p>Explore careers from different industries such as:</p>
+            <ul class="category-list">
+              <li>Media &amp; Communication</li>
+              <li>Healthcare</li>
+              <li>Engineering</li>
+              <li>Education</li>
+              <li>Defence &amp; Safety</li>
+              <li>Business &amp; Finance</li>
+              <li>Creative Arts</li>
+              <li>Tourism &amp; Hospitality</li>
+              <li>Sports &amp; Athletics</li>
+              <li>Technology &amp; IT</li>
+              <li>Aviation</li>
+              <li>Oil &amp; Gas</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">&#128740;&#65039;</span>
+            <h3>Academic Pathways</h3>
+            <p>Learn the educational pathways after SPM, STPM, Diploma, Foundation, and Degree.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">&#128161;</span>
+            <h3>Career Inspiration</h3>
+            <p>Read motivational tips, success stories, and career guidance to help you prepare for the future.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Why Choose section: summarizes the benefits for students. -->
+      <section class="buddy-section why-section" aria-labelledby="why-title">
+        <div class="why-section-inner">
+          <div class="section-heading-simple">
+            <p class="eyebrow">Why Choose CareerGuide?</p>
+            <h2 id="why-title">Built for students who want clearer career direction</h2>
+          </div>
+          <ul class="benefit-list">
+            <li>Student-friendly interface</li>
+            <li>Easy-to-understand career information</li>
+            <li>Interactive and engaging experience</li>
+            <li>Helps students discover their strengths</li>
+            <li>Supports future career planning</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Call to action: encourages users to start the quiz. -->
+      <section class="buddy-cta" aria-labelledby="cta-title">
+        <h2 id="cta-title">Ready to Discover Your Future?</h2>
+        <p>Start your career journey today and explore careers that match your passion and interests.</p>
+        <a class="primary-action" href="quiz.html">Start Quiz Now</a>
+        <blockquote class="footer-quote">"Your future begins with the right career choice."</blockquote>
+      </section>
+
+    </main>
+
+    <script>
+      // Keep the homepage starting at the top after refresh instead of restoring an old scroll position.
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      window.addEventListener("pageshow", () => {
+        window.scrollTo(0, 0);
+      });
+
+      window.addEventListener("load", () => {
+        window.scrollTo(0, 0);
+      });
+    </script>
+  </body>
+</html>

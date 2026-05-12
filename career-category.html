@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Career Category | CareerGuide</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="theme.js" defer></script>
+  </head>
+  <body>
+    <!-- Shared header: Explore Careers stays highlighted because this page belongs to that section. -->
+    <header class="topbar">
+      <a class="brand" href="homepage.html" aria-label="CareerGuide for Teens home">
+        <span>CareerGuide</span>
+        <small>for Teens</small>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="homepage.html">Home</a>
+        <a class="active" href="explore-careers.html">Explore Careers</a>
+        <a href="academic-pathways.html">Academic Pathways</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false">Dark</button>
+    </header>
+
+    <main>
+      <!-- Reusable category detail page: career-category.js fills in the matching content. -->
+      <section class="detail-frame" aria-labelledby="career-title">
+        <div class="detail-heading">
+          <a class="back-link" href="explore-careers.html" aria-label="Back to Explore Careers"></a>
+          <div>
+            <h1 id="career-title">Career Category</h1>
+            <span id="career-tag">CareerGuide</span>
+          </div>
+        </div>
+
+        <div class="detail-grid">
+          <div class="engineer-visual category-detail-visual" aria-label="Career category illustration">
+            <div class="category-detail-visual-card">
+              <img id="category-visual-image" src="" alt="">
+              <span id="category-visual-icon" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <div class="detail-copy">
+            <section>
+              <h2>Job Description</h2>
+              <p id="career-description"></p>
+            </section>
+
+            <section>
+              <h2>Who is this for?</h2>
+              <ul id="career-who" class="skills-list"></ul>
+            </section>
+
+            <section>
+              <h2>Career Examples</h2>
+              <p id="career-examples"></p>
+            </section>
+
+            <section>
+              <h2>Skills Needed</h2>
+              <ul id="career-skills" class="skills-list"></ul>
+            </section>
+          </div>
+        </div>
+
+        <section class="pathway-panel" aria-labelledby="pathway-title">
+          <h2 id="pathway-title">Education Pathway</h2>
+          <div id="career-pathway" class="pathway-steps"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="career-category.js"></script>
+  </body>
+</html>
+
+
