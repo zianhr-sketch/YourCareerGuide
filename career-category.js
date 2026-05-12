@@ -282,26 +282,26 @@
 };
 
 const categoryVisuals = {
-  "social-helping": { image: "assets/career-icons/social-helping.jpeg", alt: "Social and helping careers icon", icon: "&#129309;", bg: "linear-gradient(135deg, #e9f8f2, #eef4ff)" },
-  "media-communication": { image: "assets/career-icons/media-communication.jpeg", alt: "Media and communication icon", icon: "&#128227;", bg: "linear-gradient(135deg, #e8f5ff, #fff0e8)" },
-  "creative-design": { image: "assets/career-icons/creative-design.jpeg", alt: "Creative and design icon", icon: "&#127912;", bg: "linear-gradient(135deg, #ffe7ef, #fff6d8)" },
-  "technology-engineering": { image: "assets/career-icons/technology-engineering.jpeg", alt: "Technology and engineering icon", icon: "&#128187;", bg: "linear-gradient(135deg, #e8f5ff, #f2edff)" },
-  "business-entrepreneurship": { image: "assets/career-icons/business-entrepreneurship.jpeg", alt: "Business and entrepreneurship icon", icon: "&#128202;", bg: "linear-gradient(135deg, #fff2cf, #f7f6ff)" },
-  "science-healthcare": { image: "assets/career-icons/science-healthcare.jpeg", alt: "Science and healthcare icon", icon: "&#128300;", bg: "linear-gradient(135deg, #e8fff6, #f4fbff)" },
-  "law-public-service": { image: "assets/career-icons/law-public-service.jpeg", alt: "Law and public service icon", icon: "&#9878;&#65039;", bg: "linear-gradient(135deg, #eef4ff, #fff4dd)" },
-  "technical-skilled-trades": { image: "assets/career-icons/technical-skilled-trades.png", alt: "Technical and skilled trades icon", icon: "&#9881;&#65039;", bg: "linear-gradient(135deg, #eaf3ff, #f7f6ff)" },
-  "defense-security": { image: "assets/career-icons/defense-security.png", alt: "Defense and security services icon", icon: "&#128737;&#65039;", bg: "linear-gradient(135deg, #e8f0ff, #fff4ee)" },
-  "education-academia": { image: "assets/career-icons/education-academia.jpeg", alt: "Education and academia icon", icon: "&#127891;", bg: "linear-gradient(135deg, #fff7d8, #eef4ff)" },
-  "performing-arts": { image: "assets/career-icons/performing-arts.jpeg", alt: "Performing arts and entertainment icon", icon: "&#127917;", bg: "linear-gradient(135deg, #ffe7ef, #eef4ff)" },
-  "agriculture-farming": { image: "assets/career-icons/agriculture-farming.jpeg", alt: "Agriculture and farming icon", icon: "&#127806;", bg: "linear-gradient(135deg, #e9f8f2, #fff7d8)" },
-  "tourism-hospitality": { image: "assets/career-icons/tourism-hospitality.jpeg", alt: "Tourism and hospitality icon", icon: "&#129523;", bg: "linear-gradient(135deg, #e7fbff, #fff0e8)" },
-  "oil-gas-energy": { image: "assets/career-icons/oil-gas-energy.jpeg", alt: "Oil, gas, and energy icon", icon: "&#128738;&#65039;", bg: "linear-gradient(135deg, #fff1d6, #eaf7ff)" },
-  "aviation-cabin-crew": { image: "assets/career-icons/aviation-cabin-crew.jpeg", alt: "Aviation and cabin crew icon", icon: "&#9992;&#65039;", bg: "linear-gradient(135deg, #e8f7ff, #fff2f7)" },
-  "accounting-finance": { image: "assets/career-icons/accounting-finance.jpeg", alt: "Accounting and finance icon", icon: "&#128176;", bg: "linear-gradient(135deg, #fff2cf, #edf7ff)" },
-  "language-translation": { image: "assets/career-icons/language-translation.jpeg", alt: "Language and translation icon", icon: "&#127757;", bg: "linear-gradient(135deg, #e8f5ff, #f7f6ff)" },
-  "sports-athletics": { image: "assets/career-icons/sports-athletics.jpeg", alt: "Sports and athletics icon", icon: "&#127941;", bg: "linear-gradient(135deg, #fff1d8, #eef8ff)" },
-  "human-resource": { image: "assets/career-icons/human-resource.jpeg", alt: "Human resource and people management icon", icon: "&#128101;", bg: "linear-gradient(135deg, #e8fff6, #f7f6ff)" },
-  "diplomacy-international-relations": { image: "assets/career-icons/diplomacy-international-relations.jpeg", alt: "Diplomacy and international relations icon", icon: "&#127757;", bg: "linear-gradient(135deg, #eef4ff, #fff4dd)" }
+  "social-helping": { image: "social-helping.jpeg", alt: "Social and helping careers icon", icon: "&#129309;", bg: "linear-gradient(135deg, #e9f8f2, #eef4ff)" },
+  "media-communication": { image: "media-communication.jpeg", alt: "Media and communication icon", icon: "&#128227;", bg: "linear-gradient(135deg, #e8f5ff, #fff0e8)" },
+  "creative-design": { image: "creative-design.jpeg", alt: "Creative and design icon", icon: "&#127912;", bg: "linear-gradient(135deg, #ffe7ef, #fff6d8)" },
+  "technology-engineering": { image: "technology-engineering.jpeg", alt: "Technology and engineering icon", icon: "&#128187;", bg: "linear-gradient(135deg, #e8f5ff, #f2edff)" },
+  "business-entrepreneurship": { image: "business-entrepreneurship.jpeg", alt: "Business and entrepreneurship icon", icon: "&#128202;", bg: "linear-gradient(135deg, #fff2cf, #f7f6ff)" },
+  "science-healthcare": { image: "science-healthcare.jpeg", alt: "Science and healthcare icon", icon: "&#128300;", bg: "linear-gradient(135deg, #e8fff6, #f4fbff)" },
+  "law-public-service": { image: "law-public-service.jpeg", alt: "Law and public service icon", icon: "&#9878;&#65039;", bg: "linear-gradient(135deg, #eef4ff, #fff4dd)" },
+  "technical-skilled-trades": { image: "technical-skilled-trades.png", alt: "Technical and skilled trades icon", icon: "&#9881;&#65039;", bg: "linear-gradient(135deg, #eaf3ff, #f7f6ff)" },
+  "defense-security": { image: "defense-security.png", alt: "Defense and security services icon", icon: "&#128737;&#65039;", bg: "linear-gradient(135deg, #e8f0ff, #fff4ee)" },
+  "education-academia": { image: "education-academia.jpeg", alt: "Education and academia icon", icon: "&#127891;", bg: "linear-gradient(135deg, #fff7d8, #eef4ff)" },
+  "performing-arts": { image: "performing-arts.jpeg", alt: "Performing arts and entertainment icon", icon: "&#127917;", bg: "linear-gradient(135deg, #ffe7ef, #eef4ff)" },
+  "agriculture-farming": { image: "agriculture-farming.jpeg", alt: "Agriculture and farming icon", icon: "&#127806;", bg: "linear-gradient(135deg, #e9f8f2, #fff7d8)" },
+  "tourism-hospitality": { image: "tourism-hospitality.jpeg", alt: "Tourism and hospitality icon", icon: "&#129523;", bg: "linear-gradient(135deg, #e7fbff, #fff0e8)" },
+  "oil-gas-energy": { image: "oil-gas-energy.jpeg", alt: "Oil, gas, and energy icon", icon: "&#128738;&#65039;", bg: "linear-gradient(135deg, #fff1d6, #eaf7ff)" },
+  "aviation-cabin-crew": { image: "aviation-cabin-crew.jpeg", alt: "Aviation and cabin crew icon", icon: "&#9992;&#65039;", bg: "linear-gradient(135deg, #e8f7ff, #fff2f7)" },
+  "accounting-finance": { image: "accounting-finance.jpeg", alt: "Accounting and finance icon", icon: "&#128176;", bg: "linear-gradient(135deg, #fff2cf, #edf7ff)" },
+  "language-translation": { image: "language-translation.jpeg", alt: "Language and translation icon", icon: "&#127757;", bg: "linear-gradient(135deg, #e8f5ff, #f7f6ff)" },
+  "sports-athletics": { image: "sports-athletics.jpeg", alt: "Sports and athletics icon", icon: "&#127941;", bg: "linear-gradient(135deg, #fff1d8, #eef8ff)" },
+  "human-resource": { image: "human-resource.jpeg", alt: "Human resource and people management icon", icon: "&#128101;", bg: "linear-gradient(135deg, #e8fff6, #f7f6ff)" },
+  "diplomacy-international-relations": { image: "diplomacy-international-relations.jpeg", alt: "Diplomacy and international relations icon", icon: "&#127757;", bg: "linear-gradient(135deg, #eef4ff, #fff4dd)" }
 };
 
 function renderList(element, items) {
