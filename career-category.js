@@ -340,7 +340,8 @@ document.getElementById("career-examples").textContent = category.examples;
 const visualImage = document.getElementById("category-visual-image");
 const visualIcon = document.getElementById("category-visual-icon");
 if (visual.image) {
-  visualImage.src = "./" + visual.image;
+ const imageName = visual.image.trim(); 
+visualImage.src = imageName;
   visualImage.alt = visual.alt || `${category.title} icon`;
   visualImage.hidden = false;
   visualIcon.hidden = true;
