@@ -181,7 +181,7 @@ html[data-theme="dark"] .theme-toggle {
   border-radius: 8px 8px 0 0;
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.66) 44%, rgba(255, 255, 255, 0.12) 100%),
-    url("assets/homepage-background.png") center / cover no-repeat;
+     url("homepage-background.png") center / cover no-repeat;
 }
 
 .hero-shell::after {
