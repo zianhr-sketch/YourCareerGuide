@@ -1223,26 +1223,26 @@ input[type="radio"] {
   z-index: 1;
 }
 
-.career-bg-social-helping { --career-bg-image: url("assets/career-icons/social-helping.jpeg"); }
-.career-bg-media-communication { --career-bg-image: url("assets/career-icons/media-communication.jpeg"); }
-.career-bg-creative-design { --career-bg-image: url("assets/career-icons/creative-design.jpeg"); }
-.career-bg-business-entrepreneurship { --career-bg-image: url("assets/career-icons/business-entrepreneurship.jpeg"); }
-.career-bg-science-healthcare { --career-bg-image: url("assets/career-icons/science-healthcare.jpeg"); }
-.career-bg-law-public-service { --career-bg-image: url("assets/career-icons/law-public-service.jpeg"); }
-.career-bg-education-academia { --career-bg-image: url("assets/career-icons/education-academia.jpeg"); }
-.career-bg-performing-arts { --career-bg-image: url("assets/career-icons/performing-arts.jpeg"); }
-.career-bg-agriculture-farming { --career-bg-image: url("assets/career-icons/agriculture-farming.jpeg"); }
-.career-bg-oil-gas-energy { --career-bg-image: url("assets/career-icons/oil-gas-energy.jpeg"); }
-.career-bg-aviation-cabin-crew { --career-bg-image: url("assets/career-icons/aviation-cabin-crew.jpeg"); }
-.career-bg-sports-athletics { --career-bg-image: url("assets/career-icons/sports-athletics.jpeg"); }
-.career-bg-human-resource { --career-bg-image: url("assets/career-icons/human-resource.jpeg"); }
-.career-bg-diplomacy-international-relations { --career-bg-image: url("assets/career-icons/diplomacy-international-relations.jpeg"); }
-.career-bg-technology-engineering { --career-bg-image: url("assets/career-icons/technology-engineering.jpeg"); }
-.career-bg-technical-skilled-trades { --career-bg-image: url("assets/career-icons/technical-skilled-trades.png"); }
-.career-bg-defense-security { --career-bg-image: url("assets/career-icons/defense-security.png"); }
-.career-bg-tourism-hospitality { --career-bg-image: url("assets/career-icons/tourism-hospitality.jpeg"); }
-.career-bg-accounting-finance { --career-bg-image: url("assets/career-icons/accounting-finance.jpeg"); }
-.career-bg-language-translation { --career-bg-image: url("assets/career-icons/language-translation.jpeg"); }
+.career-bg-social-helping { --career-bg-image: url("social-helping.jpeg"); }
+.career-bg-media-communication { --career-bg-image: url("media-communication.jpeg"); }
+.career-bg-creative-design { --career-bg-image: url("creative-design.jpeg"); }
+.career-bg-business-entrepreneurship { --career-bg-image: url("business-entrepreneurship.jpeg"); }
+.career-bg-science-healthcare { --career-bg-image: url("science-healthcare.jpeg"); }
+.career-bg-law-public-service { --career-bg-image: url("law-public-service.jpeg"); }
+.career-bg-education-academia { --career-bg-image: url("education-academia.jpeg"); }
+.career-bg-performing-arts { --career-bg-image: url("performing-arts.jpeg"); }
+.career-bg-agriculture-farming { --career-bg-image: url("agriculture-farming.jpeg"); }
+.career-bg-oil-gas-energy { --career-bg-image: url("oil-gas-energy.jpeg"); }
+.career-bg-aviation-cabin-crew { --career-bg-image: url("aviation-cabin-crew.jpeg"); }
+.career-bg-sports-athletics { --career-bg-image: url("sports-athletics.jpeg"); }
+.career-bg-human-resource { --career-bg-image: url("human-resource.jpeg"); }
+.career-bg-diplomacy-international-relations { --career-bg-image: url("diplomacy-international-relations.jpeg"); }
+.career-bg-technology-engineering { --career-bg-image: url("technology-engineering.jpeg"); }
+.career-bg-technical-skilled-trades { --career-bg-image: url("technical-skilled-trades.png"); }
+.career-bg-defense-security { --career-bg-image: url("defense-security.png"); }
+.career-bg-tourism-hospitality { --career-bg-image: url("tourism-hospitality.jpeg"); }
+.career-bg-accounting-finance { --career-bg-image: url("accounting-finance.jpeg"); }
+.career-bg-language-translation { --career-bg-image: url("language-translation.jpeg"); }
 
 .career-card-top {
   display: flex;
